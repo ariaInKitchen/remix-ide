@@ -31,6 +31,7 @@
 		<link rel="stylesheet" href="assets/css/pygment_trac.css">
 		<link rel="icon" type="x-icon" href="icon.png">
 		<script src="assets/js/browserfs.min.js"></script>
+		<script src="gmsolc/sm3.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	</head>
 	<body>
@@ -51,12 +52,11 @@
 						if (keyValue[0] !== '') {
 							params[keyValue[0]] = keyValue[1]
 						}
-					}	
+					}
 					return params
 				}
         const defaultVersion = '0.8.0'
         let versionToLoad = urlParams().appVersion ? urlParams().appVersion : defaultVersion
-                
 				let assets = {
 						'0.8.0': ['https://use.fontawesome.com/releases/v5.8.1/css/all.css', 'assets/css/pygment_trac.css'],
 						'0.7.7': ['assets/css/font-awesome.min.css', 'assets/css/pygment_trac.css']
@@ -86,7 +86,7 @@
 						document.body.appendChild(app)
 						window.remixFileSystem = require('fs')
 					})
-				}				
+				}
 		</script>
 	</body>
 </html>
